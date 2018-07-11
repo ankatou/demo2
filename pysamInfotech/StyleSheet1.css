@@ -1,0 +1,244 @@
+﻿body {
+    width: 100%;
+    margin-top: 0;
+}
+.page.ng-enter, .page.ng-leave {
+    position: absolute;
+    height: 100%;
+    width:1150px;
+    padding-right:10px;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+.page.ng-enter {
+    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 100%, 0);
+}
+    .page.ng-enter-active {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+.page.ng-leave {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.page.ng-leave-active {
+    transform: translate3d(0,-100%, 0);
+    -webkit-transform: translate3d(0,-100%,0);
+}
+
+html {
+    height: 650px;
+    width: 100%;
+    position: relative;
+    
+}
+.navbar-brand {
+    background: url(/images/logo04.png) no-repeat;
+    position: relative;
+    width: 235px;
+    left: 15px;
+    margin-top: 6px;
+    background-size: contain;
+}.menu {
+    color:white;
+    padding-left:8px;
+    font-size:15px;
+}
+.intro {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    text-align: center;
+    color: white;
+    background: url(../images/i4.jpeg);
+    position: sticky;
+    z-index: 700;
+}
+    .intro-body {
+        vertical-align: middle;
+    }
+    .intro-body .brand-heading {
+            font-size: 40px;
+            margin: 0 0 35px;
+            text-transform: uppercase;
+            font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .intro-body .intro-text {
+            font-size: 18px;
+        }
+@media (min-width: 768px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+}
+        .intro .intro-body .brand-heading {
+            font-size: 100px;
+        }
+        .intro .intro-body .intro-text {
+            font-size: 26px;
+        }
+
+.brand-heading-child {
+    font-size: 20px;
+    margin: 0 0 35px;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+ul li a {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.nav li {
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 5px;
+}
+.second-div {
+    height: 610px;
+    background-color: #3A4B65;
+    padding-top: 50px;
+    color: white;
+    width: 100%;
+    position: relative;
+    
+}
+.navbar-custom {
+    padding:5px 30px;
+    padding-top:0px;
+    background-color:rgb(9, 9, 9);
+    
+}
+    .navbar-custom .nav li a:hover {
+   background-color:transparent;
+     color:white;
+     outline:none;
+    }
+    .navbar-custom .nav li a:focus {
+        background:url(images/wa1.jpg) round;
+        color: white;
+        border:-3px outset white;
+        border-radius:3px 4px;
+ }
+.active {
+    background:url(images/wa1.jpg) round;
+        color: white;
+        padding:0px 0px;
+        border:-3px outset white;
+        border-radius:3px 4px;
+}
+
+.container {
+   padding-left:10px;
+   padding-right:10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+    p {
+        margin: 0 0 35px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+.cont {
+    width: 100%;
+    padding-top: 95px;
+    
+}
+.carousel-inner {
+    height:500px;
+    padding-top:20px;
+    position:absolute;
+}
+.new-nav {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(245, 232, 232,.5);
+}
+.text {
+    position: absolute;
+    top:20%;
+    left:12%;
+    text-align:center;
+
+}
+#footer {
+    z-index:400;
+    bottom:0;
+   position:sticky;
+}
+
+
+@media only screen and (max-width: 760px) {
+    .second-div {
+        background-size:contain;
+        height:100%;
+        position:relative;
+        padding-top:0px;
+        margin-top:0px;
+    }
+   
+        p, .page p {
+        font-size:13px;
+}
+    h1, h2, .page h1, .page h2 {
+        font-size:10px;
+    }
+    h3, h4, marquee h3, page h3 {
+        font-size:10px;
+    }
+    .navbar {
+        height:50px;
+    }
+    .page.ng-enter, .page.ng-leave {
+        width:400px;
+        padding-right: 5px;
+    }
+    .carousel-inner, .cont {
+        padding-top: 0px;
+    }
+    .navbar-custom .nav li a:focus {
+        
+        background:url('');
+        background-color:black;
+    }
+    .navbar-custom {
+        padding-top:0px;
+    }
+    body {
+        height:100%;
+        overflow-x:hidden;
+        background-color:steelblue;    }
+    html {
+        height:auto;
+    }
+    
+    }
+
+
